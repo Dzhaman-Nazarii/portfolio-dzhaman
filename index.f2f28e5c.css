@@ -1,2 +1,0 @@
-.header{width:700px;z-index:1;background:rgba(3,7,18,.75);border-radius:20px;position:fixed;top:50px;left:50%;transform:translate(-50%,-50%);box-shadow:0 4px 10px rgba(9,9,9,.61)}.header__list{gap:60px;display:flex}.header__item{list-style:none}.header__link{color:#cebdbd;padding:5px;font-size:24px;font-weight:bolder;text-decoration:none}.header__link:hover,.header__link:active{background-color:#746e6e;border-radius:20px}body{background-color:#202128}
-/*# sourceMappingURL=index.f2f28e5c.css.map */
