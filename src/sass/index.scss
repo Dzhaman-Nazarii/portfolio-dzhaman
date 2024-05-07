@@ -1,5 +1,12 @@
 @import './header';
+@import './home';
+@import './about.scss';
 
 body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
     background-color: rgb(32, 33, 40);
+    width: 700px;
 }
