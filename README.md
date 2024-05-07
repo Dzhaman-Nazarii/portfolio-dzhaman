@@ -60,7 +60,7 @@ More detailed information about the status can be viewed by clicking on the icon
 ### Live page
 
 After some time, usually a couple of minutes, the live page can be viewed at the address specified in the edited `homepage` property. For example, here is a link to a live version for this repository
-[https://yuliialiubenka.github.io/simple-parcel-project-template](https://yuliialiubenka.github.io/simple-parcel-project-template).
+[https://Dzhaman-Nazarii.github.io/simple-parcel-project-template](https://Dzhaman_Nazarii.github.io/simple-parcel-project-template).
 
 If a blank page opens, make sure there are no errors in the `Console` tab related to incorrect paths to the CSS and JS files of the project (**404**). Most likely you have the wrong value for the `homepage` property or the `build` script in the `package.json` file.
 
