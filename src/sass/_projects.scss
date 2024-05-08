@@ -1,0 +1,10 @@
+.projects {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
