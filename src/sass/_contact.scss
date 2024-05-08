@@ -1,0 +1,27 @@
+.skills {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+    &__item {
+        font-size: 20px;
+        list-style: none;
+        padding: 10px;
+        background-color: hsl(0deg 0% 100% / 10%);
+        border-radius: 10px;
+    }
+}
