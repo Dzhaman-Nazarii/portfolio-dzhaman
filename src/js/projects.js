@@ -1,7 +1,6 @@
 const images = document.querySelectorAll('.slider-img');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
-console.log(images);
 let imageIndex = 0;
 
 function show(index) {
