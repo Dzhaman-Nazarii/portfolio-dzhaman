@@ -1,0 +1,12 @@
+.languages{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header{
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}

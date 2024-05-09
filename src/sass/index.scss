@@ -2,14 +2,42 @@
 @import './_home';
 @import './_about';
 @import './_projects';
-@import './skills';
-@import './contact';
+@import './_skills';
+@import './_contact';
+@import './_languages';
 
 body {
     box-sizing: border-box;
+    width: 700px;
+    font-family: 'Helvetica Now Display Regular';
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
     margin: 0 auto;
-    padding: 0;
     color: white;
     background-color: #090c27;
-    width: 700px;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
