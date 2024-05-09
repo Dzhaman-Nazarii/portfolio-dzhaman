@@ -11,7 +11,7 @@
     }
     &__avatar {
         width: 100px;
-        border: 3px solid rgb(206, 189, 189);
+        border: 3px solid rgb(2, 56, 70);
         border-radius: 50%;
     }
     &__description {
@@ -20,5 +20,14 @@
         padding-left: 10px;
         margin-top: 20px;
         text-align: center;
+    }
+    &__download {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 10px;
     }
 }

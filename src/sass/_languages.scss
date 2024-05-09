@@ -1,12 +1,36 @@
-.languages{
+.languages {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__header{
-        margin-top: 35px;
+    &__header {
         margin-bottom: 15px;
+        margin-top: 35px;
         font-size: 40px;
         font-weight: bolder;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    &__item {
+        font-size: 20px;
+        list-style: none;
+        padding: 10px;
+        background-color: rgb(2, 56, 70);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__star {
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
 }
