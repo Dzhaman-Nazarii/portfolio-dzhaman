@@ -1,0 +1,2 @@
+!function(){function e(e){var c=document.querySelectorAll("#".concat(e," .slider-img")),t=0;function n(e){c.forEach((function(e){return e.classList.remove("active")})),c[e].classList.add("active")}document.querySelector("#".concat(e," .slider-prev")).addEventListener("click",(function(){n(t=0===t?c.length-1:t-1)})),document.querySelector("#".concat(e," .slider-next")).addEventListener("click",(function(){n(t=t===c.length-1?0:t+1)}))}e("slider1"),e("slider2"),e("slider3"),e("slider4"),e("slider5")}();
+//# sourceMappingURL=index.7f82b37e.js.map

@@ -1,0 +1,2 @@
+function e(e){const t=document.querySelectorAll(`#${e} .slider-img`);let i=0;function c(e){t.forEach((e=>e.classList.remove("active"))),t[e].classList.add("active")}document.querySelector(`#${e} .slider-prev`).addEventListener("click",(function(){i=0===i?t.length-1:i-1,c(i)})),document.querySelector(`#${e} .slider-next`).addEventListener("click",(function(){i=i===t.length-1?0:i+1,c(i)}))}e("slider1"),e("slider2"),e("slider3"),e("slider4"),e("slider5");
+//# sourceMappingURL=index.4cad16a3.js.map
