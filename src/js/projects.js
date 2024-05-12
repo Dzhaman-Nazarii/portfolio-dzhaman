@@ -1,28 +1,28 @@
-const images = document.querySelectorAll('.slider-img');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-let imageIndex = 0;
+function initSlider(sliderId) {
+    const slides = document.querySelectorAll(`#${sliderId} .slider-img`);
+    let currentIndex = 0;
 
-function show(index) {
-    images.forEach(img => img.classList.remove('active'));
-    images[index].classList.add('active');
-    imageIndex = index;
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+        showSlide(currentIndex);
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+        showSlide(currentIndex);
+    }
+
+    document.querySelector(`#${sliderId} .slider-prev`).addEventListener('click', prevSlide);
+    document.querySelector(`#${sliderId} .slider-next`).addEventListener('click', nextSlide);
 }
 
-prevBtn.addEventListener('click', () => {
-    let index = imageIndex - 1;
-    if (index < 0) {
-        index = images.length - 1;
-    }
-    show(index);
-});
-
-nextBtn.addEventListener('click', () => {
-    let index = imageIndex + 1;
-    if (index >= images.length) {
-        index = 0;
-    }
-    show(index);
-});
-
-show(imageIndex);
+initSlider('slider1');
+initSlider('slider2');
+initSlider('slider3');
+initSlider('slider4');
+initSlider('slider5');

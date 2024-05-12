@@ -9,11 +9,49 @@
         font-size: 40px;
         font-weight: bolder;
     }
+    &__name {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 10px;
+      text-decoration: underline;
+    }
+    &__layout {
+      background-color: rgb(84, 103, 113);
+      border-radius: 50px;
+    }
+    &__container {
+      display: flex;
+    }
+    &__tech_stack {
+      font-size: 24px;
+      font-weight: bolder;
+      width: 150px;
+      text-align: center;
+      margin-top: 15px;
+    }
+    &__stack {
+      margin-top: 20px;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &__tech {
+      width: 40px;
+      height: 40px;
+    }
+    &__descr {
+      text-align: center;
+      padding: 0px 30px 30px 30px;
+    }
 }
 
 .slider {
-    width: 700px;
-    height: 400px;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 520px;
+  height: 350px;
     position: relative;
     overflow: hidden;
   }
