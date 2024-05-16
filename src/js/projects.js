@@ -1,28 +1,42 @@
-function initSlider(sliderId) {
-    const slides = document.querySelectorAll(`#${sliderId} .slider-img`);
-    let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    function initSlider(sliderId) {
+        const slider = document.getElementById(sliderId);
+        if (!slider) return;
 
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[index].classList.add('active');
+        const slides = slider.querySelectorAll('.slider-img');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+            showSlide(currentIndex);
+        }
+
+        const prevButton = slider.querySelector('.slider-prev');
+        const nextButton = slider.querySelector('.slider-next');
+
+        if (prevButton) {
+            prevButton.addEventListener('click', prevSlide);
+        } else {
+            console.error(`Prev button not found in slider ${sliderId}`);
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener('click', nextSlide);
+        } else {
+            console.error(`Next button not found in slider ${sliderId}`);
+        }
     }
 
-    function prevSlide() {
-        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-        showSlide(currentIndex);
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-        showSlide(currentIndex);
-    }
-
-    document.querySelector(`#${sliderId} .slider-prev`).addEventListener('click', prevSlide);
-    document.querySelector(`#${sliderId} .slider-next`).addEventListener('click', nextSlide);
-}
-
-initSlider('slider1');
-initSlider('slider2');
-initSlider('slider3');
-initSlider('slider4');
-initSlider('slider5');
+    const sliderIds = ['slider1', 'slider2', 'slider3', 'slider4', 'slider5'];
+    sliderIds.forEach(initSlider);
+});
